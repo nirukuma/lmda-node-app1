@@ -52,7 +52,7 @@ Resources:
             Path: /
             Method: post
 
-  GetHelloWorld_1:
+  GetHelloWorld1:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -68,7 +68,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_1:
+  PostHelloWorld1:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -84,7 +84,7 @@ Resources:
             Path: /
             Method: post
 
-  GetHelloWorld_2:
+  GetHelloWorld2:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -100,7 +100,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_2:
+  PostHelloWorld2:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -116,7 +116,7 @@ Resources:
             Path: /
             Method: post
 
-    GetHelloWorld_3:
+    GetHelloWorld3:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -132,7 +132,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_3:
+  PostHelloWorld3:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -148,7 +148,7 @@ Resources:
             Path: /
             Method: post          
 
-  GetHelloWorld_4:
+  GetHelloWorld4:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -164,7 +164,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_4:
+  PostHelloWorld4:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -180,7 +180,7 @@ Resources:
             Path: /
             Method: post
 
-  GetHelloWorld_5:
+  GetHelloWorld5:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -196,7 +196,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_5:
+  PostHelloWorld5:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -212,7 +212,7 @@ Resources:
             Path: /
             Method: post
 
-    GetHelloWorld_6:
+    GetHelloWorld6:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -228,328 +228,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_6:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post          
-
-
-    GetHelloWorld_7:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_7:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post
-
-  GetHelloWorld_8:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_8:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post
-
-    GetHelloWorld_9:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_9:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post          
-
-  GetHelloWorld_10:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_10:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post
-
-  GetHelloWorld_11:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_11:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post
-
-  GetHelloWorld_12:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_12:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post
-
-    GetHelloWorld_13:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_13:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post          
-
-  GetHelloWorld_14:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_14:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post
-
-  GetHelloWorld_15:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_15:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
-      Runtime: nodejs4.3
-      Tracing: Active    # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        PostEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: post
-
-    GetHelloWorld_16:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.get
-      Runtime: nodejs4.3
-      Tracing: Active  # Enable X-Ray tracing for the function
-      Role:
-        Fn::ImportValue:
-          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-
-  PostHelloWorld_16:
+  PostHelloWorld6:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -566,7 +245,7 @@ Resources:
             Method: post          
 
 
-    GetHelloWorld_17:
+    GetHelloWorld7:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -582,7 +261,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_17:
+  PostHelloWorld7:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -598,7 +277,7 @@ Resources:
             Path: /
             Method: post
 
-  GetHelloWorld_18:
+  GetHelloWorld8:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -614,7 +293,7 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_18:
+  PostHelloWorld8:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
@@ -630,7 +309,7 @@ Resources:
             Path: /
             Method: post
 
-    GetHelloWorld_19:
+    GetHelloWorld9:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
@@ -646,7 +325,328 @@ Resources:
             Path: /
             Method: get
 
-  PostHelloWorld_19:
+  PostHelloWorld9:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post          
+
+  GetHelloWorld10:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld10:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+
+  GetHelloWorld11:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld11:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+
+  GetHelloWorld12:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld12:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+
+    GetHelloWorld13:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld13:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post          
+
+  GetHelloWorld14:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld14:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+
+  GetHelloWorld15:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld15:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+
+    GetHelloWorld16:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld16:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post          
+
+
+    GetHelloWorld17:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld17:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+
+  GetHelloWorld18:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld18:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Runtime: nodejs4.3
+      Tracing: Active    # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+
+    GetHelloWorld19:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.get
+      Runtime: nodejs4.3
+      Tracing: Active  # Enable X-Ray tracing for the function
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+  PostHelloWorld19:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
