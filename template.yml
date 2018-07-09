@@ -65,7 +65,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /1/
             Method: get
 
   PostHelloWorld1:
@@ -81,7 +81,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /1/
             Method: post
 
   GetHelloWorld2:
@@ -97,7 +97,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /2/
             Method: get
 
   PostHelloWorld2:
@@ -113,7 +113,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /2/
             Method: post
 
     GetHelloWorld3:
@@ -129,7 +129,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /3/
             Method: get
 
   PostHelloWorld3:
@@ -145,7 +145,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /3/
             Method: post          
 
   GetHelloWorld4:
@@ -161,7 +161,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /4/
             Method: get
 
   PostHelloWorld4:
@@ -177,7 +177,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /4/
             Method: post
 
   GetHelloWorld5:
@@ -193,7 +193,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /5/
             Method: get
 
   PostHelloWorld5:
@@ -209,7 +209,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /5/
             Method: post
 
     GetHelloWorld6:
@@ -225,7 +225,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /6/
             Method: get
 
   PostHelloWorld6:
@@ -241,7 +241,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /6/
             Method: post          
 
 
@@ -258,7 +258,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /7/
             Method: get
 
   PostHelloWorld7:
@@ -274,7 +274,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /7/
             Method: post
 
   GetHelloWorld8:
@@ -290,7 +290,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /8/
             Method: get
 
   PostHelloWorld8:
@@ -306,7 +306,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /8/
             Method: post
 
     GetHelloWorld9:
@@ -322,7 +322,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /9/
             Method: get
 
   PostHelloWorld9:
@@ -338,7 +338,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /9/
             Method: post          
 
   GetHelloWorld10:
@@ -354,7 +354,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /10/
             Method: get
 
   PostHelloWorld10:
@@ -370,7 +370,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /10/
             Method: post
 
   GetHelloWorld11:
@@ -386,7 +386,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /11/
             Method: get
 
   PostHelloWorld11:
@@ -402,7 +402,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /11/
             Method: post
 
   GetHelloWorld12:
@@ -418,7 +418,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /12/
             Method: get
 
   PostHelloWorld12:
@@ -434,7 +434,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /12/
             Method: post
 
     GetHelloWorld13:
@@ -450,7 +450,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /13/
             Method: get
 
   PostHelloWorld13:
@@ -466,7 +466,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /13/
             Method: post          
 
   GetHelloWorld14:
@@ -482,7 +482,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /14/
             Method: get
 
   PostHelloWorld14:
@@ -498,7 +498,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /14/
             Method: post
 
   GetHelloWorld15:
@@ -514,7 +514,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /15/
             Method: get
 
   PostHelloWorld15:
@@ -530,7 +530,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /15/
             Method: post
 
     GetHelloWorld16:
@@ -546,7 +546,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /16/
             Method: get
 
   PostHelloWorld16:
@@ -562,7 +562,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /16/
             Method: post          
 
 
@@ -579,7 +579,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /17/
             Method: get
 
   PostHelloWorld17:
@@ -595,7 +595,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /17/
             Method: post
 
   GetHelloWorld18:
@@ -611,7 +611,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /18/
             Method: get
 
   PostHelloWorld18:
@@ -627,7 +627,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /18/
             Method: post
 
     GetHelloWorld19:
@@ -643,7 +643,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /19/
             Method: get
 
   PostHelloWorld19:
@@ -659,6 +659,6 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /19/
             Method: post          
 
